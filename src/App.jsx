@@ -3,6 +3,7 @@ import css from './App.module.css';
 
 import Home from './views/Home.jsx';
 import Index from './views/Index.jsx';
+import OperationalFlowchart from './views/OperationalFlowchart.jsx';
 
 import Menus from './components/Menu/Menus.jsx';
 import {Layout} from 'antd';
@@ -24,7 +25,8 @@ class App extends Component {
                     </Layout.Sider>
                     <Layout.Content style={{marginLeft: 200}}>
                         <Route exact path={'/'} component={Index} />
-                        <Route exact path={'/home'} component={Home} />
+                        <Route exact path={'/doubleLayer'} component={Home} />
+                        <Route exact path={'/OperationalFlowchart'} component={OperationalFlowchart} />
                     </Layout.Content>
                 </Layout>
             </div>

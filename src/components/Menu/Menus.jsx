@@ -23,9 +23,14 @@ class Menus extends React.Component{
                             说明
                         </Link>
                     </Menu.Item>
-                    <Menu.Item key={'/home'}>
-                        <Link to={'/home'}>
+                    <Menu.Item key={'/doubleLayer'}>
+                        <Link to={'/doubleLayer'}>
                             双层图表嵌套
+                        </Link>
+                    </Menu.Item>
+                    <Menu.Item key={'/OperationalFlowchart'}>
+                        <Link to={'/OperationalFlowchart'}>
+                            可操作流程图
                         </Link>
                     </Menu.Item>
                 </Menu>
