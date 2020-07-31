@@ -33,6 +33,11 @@ class Menus extends React.Component{
                             可操作流程图
                         </Link>
                     </Menu.Item>
+                    <Menu.Item key={'/LTPPage'}>
+                        <Link to={'/LTPPage'}>
+                            LTP
+                        </Link>
+                    </Menu.Item>
                 </Menu>
             </div>
         )

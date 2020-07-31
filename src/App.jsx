@@ -4,6 +4,7 @@ import css from './App.module.css';
 import Home from './views/Home.jsx';
 import Index from './views/Index.jsx';
 import OperationalFlowchart from './views/OperationalFlowchart.jsx';
+import LTPPage from './views/LTPPage.jsx';
 
 import Menus from './components/Menu/Menus.jsx';
 import {Layout} from 'antd';
@@ -27,6 +28,7 @@ class App extends Component {
                         <Route exact path={'/'} component={Index} />
                         <Route exact path={'/doubleLayer'} component={Home} />
                         <Route exact path={'/OperationalFlowchart'} component={OperationalFlowchart} />
+                        <Route exact path={'/LTPPage'} component={LTPPage} />
                     </Layout.Content>
                 </Layout>
             </div>
