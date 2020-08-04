@@ -1,0 +1,10 @@
+.login{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15vh;
+    left: calc((100vw - 400px) / 2);
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}

@@ -1,11 +1,10 @@
-export default (state= {}, action) => {
+export default (state= null, action) => {
     switch(action.type){
-        case 'Login':
-            state.isLogin = true;
-            return '登录成功!';
-        case 'Logout':
-            return '退出登录!';
-        default:
+        case 'LOGIN':
+            return action.user;
+        case 'LOGOUT':
             return null;
+        default:
+            return state;
     }
 }
