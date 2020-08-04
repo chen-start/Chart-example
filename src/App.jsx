@@ -10,9 +10,14 @@ class App extends Component {
     constructor(props) {
         super(props);
     }
+    componentDidMount() {
+        console.log()
+    }
+
     render() {
         return (
             <div className={css.app}>
+                {/*<Route path={'/'} component={Home} />*/}
                 <Home />
                 <Route exact path={'/login'} component={Login} />
             </div>
