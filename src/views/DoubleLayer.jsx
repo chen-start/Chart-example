@@ -1,11 +1,11 @@
 import React from 'react';
 import eCharts from 'echarts';
 import $ from 'jquery';
-import css from './Home.module.css';
+import css from './DoubleLayer.module.css';
 import {Breadcrumb} from 'antd';
 import {HomeOutlined} from '@ant-design/icons';
 
-export default class Home extends React.Component {
+export default class DoubleLayer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

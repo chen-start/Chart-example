@@ -18,8 +18,8 @@ class Menus extends React.Component{
         return (
             <div>
                 <Menu onClick={this.handleClick} style={{ overflowY: 'auto', overflowX: 'hidden', height: '100vh'}} defaultOpenKeys={['/']} mode="inline">
-                    <Menu.Item key={'/'}>
-                        <Link to={'/'}>
+                    <Menu.Item key={'/index'}>
+                        <Link to={'/index'}>
                             说明
                         </Link>
                     </Menu.Item>
