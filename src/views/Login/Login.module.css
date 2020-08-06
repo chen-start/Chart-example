@@ -5,6 +5,6 @@
     top: 15vh;
     left: calc((100vw - 400px) / 2);
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 80px 20px 20px;
     box-sizing: border-box;
 }

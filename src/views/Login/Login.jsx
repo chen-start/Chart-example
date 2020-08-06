@@ -17,7 +17,7 @@ class Login extends React.Component{
         }
     }
 
-    Login(e){
+    Login(){
         let _this = this;
         if(_this.state.username !== 'admin' || _this.state.password !== '0000'){
             return message.error('账号或密码错误');
@@ -25,6 +25,10 @@ class Login extends React.Component{
 
         this.props.dispatch({ type: "LOGIN", user: _this.state.username });
         this.props.history.push("/");
+    }
+
+    change(){
+
     }
 
     render(){
@@ -51,10 +55,6 @@ class Login extends React.Component{
                         rules={[{ required: true, message: 'Please input your password!' }]}
                     >
                         <Input.Password prefix={<UnlockOutlined />} id='password' value={this.state.password} onChange={(e) => {this.setState({ password: e.target.value })}} />
-                    </Form.Item>
-
-                    <Form.Item name="remember" valuePropName="checked">
-                        <Checkbox>Remember me</Checkbox>
                     </Form.Item>
 
                     <Form.Item style={{display: 'flex', justifyContent: 'center'}}>
