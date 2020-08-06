@@ -19,19 +19,18 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx$/,
+                test: /\.js[x]?$/,
+                enforce: 'pre',
                 use: [
                     {
                         loader: 'babel-loader'
+                    },
+                    {
+                        loader: 'eslint-loader',
+                        options: { fix: true }
                     }
-                ]
-            },
-            {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: [
-                    path.join(__dirname, '../node_modules')
-                ]
+                ],
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
