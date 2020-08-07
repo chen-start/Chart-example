@@ -16,6 +16,17 @@ module.exports = {
         ignored: /node_modules/,
         poll: 2000
     },
+    devServer: {
+        proxy: {
+            '/': {
+                target: 'http://localhost:4000',
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/chen': ''
+                }
+            }
+        }
+    },
     module: {
         rules: [
             {

@@ -6,6 +6,7 @@ import Login from './views/Login/Login.jsx';
 import Error from './views/Error/Error.jsx';
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
+import './config/axios.config.js';
 
 import {
     BrowserRouter,
