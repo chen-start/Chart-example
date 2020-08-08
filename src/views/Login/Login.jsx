@@ -26,7 +26,7 @@ class Login extends React.Component{
         let _this = this;
         this.$http({
             method: 'POST',
-            url: 'http://localhost:4000/api/toLogin',
+            url: '/toLogin',
             data: {
                 username: _this.state.username,
                 password: _this.state.password
@@ -53,7 +53,7 @@ class Login extends React.Component{
         let _this = this;
         this.$http({
             method: 'POST',
-            url: 'http://localhost:4000/api/toRegister',
+            url: '/toRegister',
             data: {
                 username: _this.state.user,
                 password: _this.state.pass,
