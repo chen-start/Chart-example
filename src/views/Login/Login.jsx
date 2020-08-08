@@ -17,7 +17,8 @@ class Login extends React.Component{
             visible: false,
             user: '',
             pass: '',
-            id: ''
+            id: '',
+            state: undefined
         }
     }
 
